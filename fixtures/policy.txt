@@ -1,0 +1,6 @@
+AuthorCredit demo policy for the fictional Coastal Methods Lab.
+All four requirements must be met for an authorship recommendation:
+1. Substantial contribution to study design, data acquisition, analysis, or interpretation.
+2. Drafting the manuscript or revising it for substantive intellectual content.
+3. Approval of the final version.
+4. Agreement to be accountable for the work and help resolve integrity questions.
