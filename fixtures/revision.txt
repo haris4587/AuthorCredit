@@ -1,0 +1,8 @@
+Fictional Coastal Methods Lab contribution and revision register
+Candidate ID: coastal-demo-17
+The lab's revision register documents that coastal-demo-17 designed the
+sampling strategy and performed the primary sensitivity analysis for the
+coastal-salinity study. The manuscript revision log identifies coastal-demo-17
+as the author of the Methods draft and the substantive Results revision that
+explained the effect of excluding tidal outliers. This record represents
+synthetic reviewer-provided data for a public Studionet demonstration.
