@@ -1,0 +1,39 @@
+:root{font-family:system-ui,sans-serif;color:#242e28;background:#f2f2e8;line-height:1.55;--ink:#18382a;--line:#d9dfd2;--paper:#fffef8}
+*{box-sizing:border-box}
+body{margin:0}
+header{background:var(--paper);border-bottom:1px solid var(--line)}
+.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
+.top,.tools,.actions,.links{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.top{justify-content:space-between;padding:13px 0}
+.brand{font-weight:750;text-decoration:none;color:var(--ink)}
+.brand span{display:inline-grid;place-items:center;border-radius:7px;background:var(--ink);color:white;width:35px;height:35px;margin-right:6px}
+.network,.eyebrow{font:700 .73rem/1.5 ui-monospace,monospace;letter-spacing:.075em;color:#46614f}
+.hero{padding:66px 0 30px}
+h1,h2{font-family:Georgia,serif;color:var(--ink);margin:0;font-weight:500;line-height:1.02}
+h1{font-size:clamp(3.45rem,9vw,7rem);letter-spacing:-.06em}
+h2{font-size:2rem}
+.hero>p:not(.eyebrow){font-size:1.12rem;max-width:55ch}
+a{color:#205641}
+.notice{border-left:4px solid #a66c32;background:#f9edda;padding:14px 18px;margin:0 0 22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:20px;min-width:0}
+.panel .eyebrow{margin:0 0 8px}
+label{display:block;font-weight:650;font-size:.88rem;margin:0 0 12px;flex:1;min-width:0}
+input:not([type=checkbox]),textarea{display:block;width:100%;border:1px solid #9ba99e;border-radius:6px;padding:9px 11px;font:inherit;background:white;margin-top:3px;color:inherit}
+textarea{resize:vertical}
+.check{display:flex;align-items:flex-start;gap:7px}
+.check input{margin-top:.35em}
+button{border:1px solid var(--ink);background:var(--ink);color:white;font:650 .87rem system-ui;border-radius:6px;padding:10px 14px;cursor:pointer}
+button.secondary{color:var(--ink);background:transparent}
+button:disabled{opacity:.55;cursor:wait}
+:focus-visible{outline:3px solid #a66c32;outline-offset:3px}
+#inspect,#track{align-items:flex-end;margin-top:16px}
+#inspect label,#track label{margin:0;min-width:160px}
+#track{max-width:720px}
+#case{overflow-wrap:anywhere}
+#case dt{font-weight:700}
+#case dd{margin:0 0 8px}
+#tx-link{display:inline-block;margin-top:9px}
+[hidden]{display:none!important}
+footer{padding:10px 0 26px;color:#46614f;font-size:.85rem}
+@media(max-width:700px){.grid{display:block}.hero{padding-top:42px}.panel{padding:18px}}

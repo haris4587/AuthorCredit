@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Review documented research contributions against a pinned authorship policy on GenLayer Studionet.">
+<title>AuthorCredit · Authorship Review</title>
+</head>
+<body>
+<header><div class="wrap top"><a class="brand" href="./"><span>AC</span> AuthorCredit</a><div class="tools"><span class="network">● Studionet · 61999</span><button id="connect" type="button">Connect wallet</button></div></div></header>
+<main class="wrap">
+<section class="hero">
+<p class="eyebrow">RESEARCH INTEGRITY / AUTHORSHIP REVIEW</p>
+<h1>Give credit<br>where it’s due.</h1>
+<p>Evaluate documented contributions against a locked authorship policy. Share an evidence-backed recommendation that your institution can independently review.</p>
+<div class="links"><a id="contract-link" target="_blank" rel="noopener">View contract ↗</a><a href="https://studio.genlayer.com/run-debug" target="_blank" rel="noopener">Open GenLayer Studio ↗</a><a href="https://github.com/haris4587/AuthorCredit" target="_blank" rel="noopener">Source &amp; guide ↗</a></div>
+</section>
+<div class="notice"><strong>Public test network.</strong> Use synthetic or authorized public materials only. Wallet addresses, case identifiers, references, and attestations become public. Institutions retain decision-making authority.</div>
+<div class="grid">
+<section class="panel">
+<p class="eyebrow">01 / REVIEWER</p><h2>Open a case</h2>
+<p>Assign a contributor and lock the applicable four-gate policy.</p>
+<form id="open">
+<label>Public candidate ID<input name="candidate" maxlength="100" required placeholder="coastal-demo-17"></label>
+<label>Contributor wallet address<input name="contributor" required pattern="0x[a-fA-F0-9]{40}" placeholder="0x…"></label>
+<label>Pinned policy URL<input name="url" type="url" maxlength="240" required placeholder="https://raw.githubusercontent.com/…"></label>
+<label>Policy SHA-256<input name="digest" required pattern="[a-f0-9]{64}" placeholder="64 lowercase hex characters"></label>
+<div class="actions"><button>Open case</button><button type="button" class="secondary" id="demo">Fill sample inputs</button></div>
+</form>
+</section>
+<section class="panel">
+<p class="eyebrow">02 / CONTRIBUTOR</p><h2>Submit evidence</h2>
+<p>Supply up to three pinned UTF-8 text records, one URL and SHA-256 per line, separated by a space.</p>
+<form id="submit">
+<label>Case ID<input name="caseId" required pattern="[1-9][0-9]{0,77}" inputmode="numeric"></label>
+<label>Evidence references<textarea name="refs" required rows="4" placeholder="https://raw.githubusercontent.com/… SHA-256"></textarea></label>
+<label class="check"><input name="approval" type="checkbox"> I approve the final manuscript version.</label>
+<label class="check"><input name="accountability" type="checkbox"> I agree to be accountable for the work.</label>
+<button>Submit evidence</button>
+</form>
+</section>
+</div>
+<section class="panel record">
+<p class="eyebrow">03 / PUBLIC RECORD</p><h2>Inspect a case</h2>
+<form id="inspect" class="actions"><label>Case ID<input name="caseId" required pattern="[1-9][0-9]{0,77}" inputmode="numeric"></label><button>Read finalized case</button><button id="demo-case" type="button" class="secondary">Load demo case</button></form>
+<p id="read-status" role="status"></p>
+<div id="case" hidden></div>
+<div class="actions"><button id="review" type="button" hidden>Run validator review</button><button id="download" type="button" class="secondary" hidden>Download case JSON</button></div>
+</section>
+<section class="panel">
+<p class="eyebrow">TRANSACTION TRACKER</p><h2>Follow a write</h2>
+<p id="tx-status" role="status" aria-live="polite">No transaction in progress.</p>
+<form id="track" class="actions"><label>Transaction hash<input name="hash" required pattern="0x[a-fA-F0-9]{64}"></label><button class="secondary">Track transaction</button></form>
+<a id="tx-link" target="_blank" rel="noopener" hidden>Open in explorer ↗</a>
+</section>
+</main>
+<footer class="wrap">AuthorCredit · Advisory authorship review on GenLayer</footer>
+<script type="module" src="/src.js"></script>
+</body>
+</html>

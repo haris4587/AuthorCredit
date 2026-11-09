@@ -1,0 +1,23 @@
+{
+  "name": "authorcredit",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "python3 -m unittest discover -s tests -v",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haris4587/AuthorCredit.git"
+  },
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "genlayer-js": "1.1.8"
+  },
+  "devDependencies": {
+    "vite": "8.3.6"
+  },
+  "private": true
+}
